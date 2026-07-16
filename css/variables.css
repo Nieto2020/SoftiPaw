@@ -1,1 +1,9 @@
-variable
+/* Definición de variables CSS para el control total del diseño */
+:root {
+    --color-principal: #2c3e50;
+    --color-acento: #3498db;
+    --color-fondo: #f8f9fa;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --fuente-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
