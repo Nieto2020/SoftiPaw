@@ -12,13 +12,13 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #0F172A; overflow: hidden; }
+        body { background: #000000; overflow: hidden; }
         #particles-js {
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
             z-index: 0;
-            background: #0F172A;
+            background: none;
         }
         .btn-volver {
             position: fixed;

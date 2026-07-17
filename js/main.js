@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof particlesJS !== 'undefined') {
         particlesJS.load('particles-js', 'assets/particles.json', function () {
             const pJS = window.pJSDom[0].pJS;
-            const BASE = 80; // valor inicial de particles.json
+            const BASE = 130; // valor inicial de particles.json
             let limpiezaActiva = false;
 
             function bucleParticulas() {
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                // Limpiar exceso de nodos (> BASE + 25) cada 2s
-                const sobrante = pJS.particles.array.length - (BASE + 50);
+                // Limpiar exceso de nodos (> BASE + 40) cada cierto tiempo
+                const sobrante = pJS.particles.array.length - (BASE + 40);
                 if (sobrante > 0 && !limpiezaActiva) {
                     limpiezaActiva = true;
                     setTimeout(() => {
