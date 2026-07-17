@@ -1,20 +1,24 @@
-/* Definición de variables CSS - Paleta profesional y sobria */
+/* Neo-pop 3D pastel */
 :root {
-    --color-principal: #4F46E5;
-    --color-principal-light: #6366F1;
-    --color-acento: #06B6D4;
-    --color-acento-light: #22D3EE;
-    --color-fondo: #0F172A;
-    --color-fondo-alt: #1E293B;
-    --color-card: rgba(255, 255, 255, 0.04);
-    --color-card-border: rgba(255, 255, 255, 0.06);
-    --color-texto: #F1F5F9;
-    --color-texto-muted: #94A3B8;
-    --color-blanco: #ffffff;
+    --color-rosa: #FF8FAB;
+    --color-rosa-light: #FFB5C7;
+    --color-amarillo: #FFE566;
+    --color-amarillo-light: #FFF0A0;
+    --color-azul: #6BB5FF;
+    --color-azul-light: #A3D4FF;
+    --color-fondo: #FFFAF2;
+    --color-fondo-alt: #FFF0E0;
+    --color-card: #FFFFFF;
+    --color-card-border: #1A1A2E;
+    --color-texto: #1A1A2E;
+    --color-texto-muted: #5A5060;
+    --color-blanco: #FFFFFF;
+    --color-border: #1A1A2E;
     --fuente-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
-    --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.1);
-    --radius-card: 1rem;
-    --radius-sm: 0.625rem;
-    --transition: 0.25s ease;
+    --shadow-neo: 4px 4px 0px #1A1A2E;
+    --shadow-neo-hover: 6px 6px 0px #1A1A2E;
+    --shadow-neo-sm: 3px 3px 0px #1A1A2E;
+    --radius-card: 1.25rem;
+    --radius-sm: 0.75rem;
+    --transition: 0.2s ease;
 }

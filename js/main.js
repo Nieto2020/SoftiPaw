@@ -30,7 +30,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ─── Fondo de partículas interactivas ───
+    // ─── Carrusel de Quiénes Somos ───
+    const track = document.getElementById('carruselTrack');
+    const dots = document.querySelectorAll('#carruselDots .dot');
+    if (track && dots.length) {
+        let index = 0;
+        const total = dots.length;
+        let interval;
+
+        function irA(i) {
+            index = i;
+            track.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach((d, n) => d.classList.toggle('activo', n === index));
+        }
+
+        function siguiente() { irA((index + 1) % total); }
+
+        interval = setInterval(siguiente, 4000);
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                irA(i);
+                clearInterval(interval);
+                interval = setInterval(siguiente, 4000);
+            });
+        });
+    }
     if (typeof particlesJS !== 'undefined') {
         particlesJS.load('particles-js', 'assets/particles.json', function () {
             const pJS = window.pJSDom[0].pJS;
