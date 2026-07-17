@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradientes de Color -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9F8" />
+      <stop offset="100%" stop-color="#F3E4E1" />
+    </linearGradient>
+
+    <linearGradient id="pad-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFBCA9" />
+      <stop offset="100%" stop-color="#FFA38B" />
+    </linearGradient>
+
+    <!-- Filtros para las sombras -->
+    <filter id="outer-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#8C6D68" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="shadow-blur">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+
+    <!-- Geometría base de la huella -->
+    <g id="paw-geom">
+      <!-- Dedo 1 (Izquierda) -->
+      <ellipse cx="115" cy="235" rx="32" ry="45" transform="rotate(-35 115 235)" />
+      <!-- Dedo 2 (Medio Izquierda) -->
+      <ellipse cx="195" cy="155" rx="38" ry="58" transform="rotate(-10 195 155)" />
+      <!-- Dedo 3 (Medio Derecha) -->
+      <ellipse cx="317" cy="155" rx="38" ry="58" transform="rotate(10 317 155)" />
+      <!-- Dedo 4 (Derecha) -->
+      <ellipse cx="397" cy="235" rx="32" ry="45" transform="rotate(35 397 235)" />
+      <!-- Almohadilla Principal -->
+      <path d="M 140,330 C 140,260 200,250 256,250 C 312,250 372,260 372,330 C 372,385 320,405 256,405 C 192,405 140,385 140,330 Z" />
+    </g>
+
+    <!-- Máscara de recorte para que la sombra de los dedos no se salga del fondo -->
+    <clipPath id="bg-clip">
+      <use href="#paw-geom" stroke-width="90" stroke-linejoin="round" stroke-linecap="round" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Silueta de fondo acolchada con su sombra exterior -->
+  <g filter="url(#outer-shadow)">
+    <g clip-path="url(#bg-clip)">
+      <!-- Fondo blanco/rosa pastel -->
+      <use href="#paw-geom" fill="url(#bg-gradient)" stroke="url(#bg-gradient)" stroke-width="90" stroke-linejoin="round" stroke-linecap="round" />
+
+      <!-- Sombra diagonal interior suave (efecto "long shadow") -->
+      <use href="#paw-geom" fill="#6E4E49" opacity="0.18" transform="translate(12, 16)" filter="url(#shadow-blur)" />
+    </g>
+  </g>
+
+  <!-- 2. Almohadillas rosas sobrepuestas -->
+  <use href="#paw-geom" fill="url(#pad-gradient)" />
+</svg>

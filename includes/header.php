@@ -17,7 +17,7 @@
     <div class="contenedor">
         <div class="logo">
             <a href="index.php" class="logo-link">
-                <span class="logo-paw">🐾</span>
+                <span class="logo-paw"><img src="./assets/svg/paw2.svg" alt="Huella de perro"></span>
                 <span class="logo-texto">SoftiPaw</span>
             </a>
         </div>

@@ -57,6 +57,12 @@ body {
     color: #8B5E3C;
 }
 
+.logo-paw img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
 .logo-icon { display: none; }
 
 .logo-texto {
