@@ -24,7 +24,7 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -453,12 +453,18 @@ body {
 .about-section {
     width: 100%;
     margin: 3rem 0;
-    padding: 2.5rem;
+    padding: 2rem;
     background: var(--color-card);
     border: 3px solid var(--color-border);
     border-radius: var(--radius-card);
     box-shadow: var(--shadow-neo);
     text-align: left;
+}
+
+@media (min-width: 640px) {
+    .about-section {
+        padding: 2.5rem;
+    }
 }
 
 .about-row {

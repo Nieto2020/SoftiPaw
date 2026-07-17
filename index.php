@@ -51,16 +51,19 @@ require_once 'includes/header.php';
     <div class="about-section">
     <div class="about-row">
         <div class="about-col-texto">
-            <h2 class="about-titulo">¡Creamos <span class="about-destacado">magia digital</span> con sabor latino!</h2>
+           <h2 class="about-titulo">SoftiPaw: <span class="about-destacado">Innovación digital</span> con alma latina</h2>
             <p class="about-descripcion">
-                En <strong>SoftiPaw</strong> nos apasiona transformar ideas en soluciones digitales que rompen el molde. 
-                No somos la típica agencia: somos un <strong>dream team multidisciplinario</strong> de desarrolladores web 
-                y expertos en Inteligencia Artificial, Datos, Software y Redes para abordar cada reto con visión estratégica.
+                En <strong>SoftiPaw</strong> transformamos tus ideas en experiencias digitales únicas. 
+                Somos un <strong>equipo creativo y técnico</strong> que combina desarrollo web, inteligencia artificial 
+                y soluciones de datos para llevar tu proyecto más allá de lo esperado.
             </p>
             <p class="about-descripcion">
-                Con nuestro corazón principalmente en <strong>México</strong> y talento estratégico en 
-                <strong>Argentina, Chile y Colombia</strong>, combinamos la calidez y agilidad de nuestra región 
-                con excelencia técnica de clase mundial para ofrecerte soluciones cercanas y de alto impacto.
+                Con raíces en <strong>México</strong> y aliados estratégicos en 
+                <strong>Argentina, Chile y Colombia</strong>, unimos la energía de nuestra región 
+                con excelencia global para crear soluciones cercanas, ágiles y de alto impacto.
+            </p>
+            <p class="about-descripcion">
+                <strong>Tu visión, nuestra misión:</strong> juntos hacemos que la tecnología trabaje para ti.
             </p>
                 <div class="about-badges">
                     <div class="about-badge">
@@ -128,7 +131,7 @@ require_once 'includes/header.php';
         </div>
         <div class="stat-item">
             <div class="stat-numero">30+</div>
-            <div class="stat-label">Clientes felices</div>
+            <div class="stat-label">Clientes satisfechos</div>
         </div>
         <div class="stat-item">
             <div class="stat-numero">5★</div>
