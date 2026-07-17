@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftiPaw - Estudio Digital</title>
     <meta name="description" content="SoftiPaw - Transformamos ideas en experiencias digitales impactantes. Diseño y desarrollo web moderno.">
-    <meta name="theme-color" content="#0F0A1E">
+    <meta name="theme-color" content="#FFFAF2">
     <link rel="icon" type="image/png" href="assets/img/icon_logo.png">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Vinculación del archivo CSS principal -->
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
@@ -19,7 +17,7 @@
     <div class="contenedor">
         <div class="logo">
             <a href="index.php" class="logo-link">
-                <img src="assets/img/icon_logo.png" alt="SoftiPaw" class="logo-icon">
+                <span class="logo-paw">🐾</span>
                 <span class="logo-texto">SoftiPaw</span>
             </a>
         </div>

@@ -30,9 +30,9 @@ body {
 
 /* ─── CABECERA ─── */
 .header-principal {
-    background: var(--color-blanco);
-    border-bottom: 3px solid var(--color-border);
-    padding: 0.8rem 0;
+    background: var(--color-fondo);
+    border-bottom: 3px solid var(--color-rosa);
+    padding: 0.7rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -47,14 +47,21 @@ body {
 .logo { display: flex; align-items: center; }
 
 .logo-link {
-    display: flex; align-items: center; gap: 0.6rem; text-decoration: none;
+    display: flex; align-items: center; gap: 0.4rem; text-decoration: none;
 }
 
-.logo-icon { height: 32px; width: auto; display: block; }
+.logo-img-texto { display: none; }
+
+.logo-paw {
+    font-size: 1.5rem; line-height: 1;
+    color: #8B5E3C;
+}
+
+.logo-icon { display: none; }
 
 .logo-texto {
     font-size: 1.3rem; font-weight: 800; letter-spacing: -0.5px;
-    color: var(--color-texto);
+    color: #8B5E3C;
 }
 
 .navegacion { display: flex; gap: 0.25rem; }
@@ -71,7 +78,7 @@ body {
 }
 
 .navegacion a:hover {
-    border-color: var(--color-border);
+    border-color: var(--color-rosa);
     box-shadow: var(--shadow-neo-sm);
 }
 
@@ -79,7 +86,7 @@ body {
 
 .navegacion a.activo {
     background: var(--color-amarillo);
-    border-color: var(--color-border);
+    border-color: var(--color-rosa);
     box-shadow: var(--shadow-neo-sm);
 }
 
@@ -219,8 +226,8 @@ body {
 
 /* ─── PIE DE PÁGINA ─── */
 .footer-principal {
-    background: var(--color-blanco);
-    border-top: 3px solid var(--color-border);
+    background: var(--color-fondo);
+    border-top: 3px solid var(--color-rosa);
     padding: 2rem 0;
     color: var(--color-texto-muted);
     font-size: 0.9rem;
@@ -276,7 +283,7 @@ body {
 }
 
 .footer-nav a:hover {
-    border-color: var(--color-border);
+    border-color: var(--color-rosa);
     box-shadow: var(--shadow-neo-sm);
 }
 
