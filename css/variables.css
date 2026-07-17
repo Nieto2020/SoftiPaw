@@ -9,10 +9,10 @@
     --color-azul-light: #C9E9FF;    /* Algodón de azúcar azul */
     
     /* Fondos e Interfaces */
-    --color-fondo: #f0e7e7;         /* Malvavisco/Nube esponjosa */
+    --color-fondo: #ffffff;         /* Malvavisco/Nube esponjosa */
     --color-fondo-alt: #FFF0F6;     /* Helado derretido */
     --color-card: #FFFFFF;
-    
+
     /* Contraste Pop (Cambiado a un regaliz de mora súper oscuro para que el pastel destaque) */
     --color-card-border: #31163D;   
     --color-texto: #31163D;

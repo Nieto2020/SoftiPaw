@@ -230,20 +230,35 @@ body {
 
 .btn-outline:active { transform: translate(2px, 2px); box-shadow: none; }
 
-/* ─── PIE DE PÁGINA ─── */
+/* ─── MAQUETACIÓN GENERAL Y FILAS ─── */
 .footer-principal {
-    background: var(--color-fondo);
-    border-top: 3px solid var(--color-rosa);
-    padding: 2rem 0;
-    color: var(--color-texto-muted);
+    background: #1F0E26; /* Fondo ultra oscuro serio */
+    border-top: 4px solid var(--color-rosa);
+    padding: 4rem 0 2rem 0; /* Más espacio arriba */
+    color: #FFFFFF;
     font-size: 0.9rem;
 }
 
-.footer-inner {
+/* El contenedor principal distribuye las columnas en pantallas grandes */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* La marca ocupa el doble de espacio */
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Adaptabilidad para Tablets y Celulares */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* ─── ESTILOS DE COLUMNAS ─── */
+.footer-col-brand {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -253,44 +268,129 @@ body {
     gap: 0.75rem;
 }
 
-.footer-brand-icon {
-    height: 28px;
-    width: auto;
-    display: block;
+.footer-brand-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
 }
 
-.footer-brand-name {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: var(--color-texto);
-    margin-bottom: 0.1rem;
+.footer-brand-tagline {
+    color: var(--color-rosa-light);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 320px; /* Evita que el texto se extienda demasiado */
+}
+
+.footer-title-col {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+/* Menús de navegación verticales */
+.footer-col .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-col .footer-nav a {
+    color: var(--color-rosa-light);
+    opacity: 0.8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer-col .footer-nav a:hover {
+    color: var(--color-amarillo); /* Ilumina al pasar el cursor */
+    opacity: 1;
+    transform: translateX(4px); /* Sutil desplazamiento hacia la derecha */
+}
+
+/* ─── ICONOS DE REDES SOCIALES ─── */
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05); /* Círculo de fondo sutil */
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon:hover {
+    background: var(--color-rosa);
+    color: #1F0E26; /* Contraste oscuro en el interior */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0px 4px 10px rgba(255, 143, 171, 0.3);
+}
+
+/* ─── SECCIÓN INFERIOR LEGAL ─── */
+.footer-divisor {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-brand-copy {
     font-size: 0.85rem;
     margin: 0;
-    color: var(--color-texto-muted);
+    color: var(--color-rosa-light);
+    opacity: 0.5;
 }
 
-.footer-nav {
+.footer-legal-links {
     display: flex;
     gap: 1.5rem;
 }
 
-.footer-nav a {
-    color: var(--color-texto);
+.footer-legal-links a {
+    color: var(--color-rosa-light);
+    opacity: 0.5;
     text-decoration: none;
     font-size: 0.85rem;
-    font-weight: 600;
-    transition: var(--transition);
-    padding: 0.3rem 0.8rem;
-    border-radius: 999px;
-    border: 2px solid transparent;
+    transition: opacity 0.2s ease;
 }
 
-.footer-nav a:hover {
-    border-color: var(--color-rosa);
-    box-shadow: var(--shadow-neo-sm);
+.footer-legal-links a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+/* Forzar el tamaño del icono del footer */
+.footer-brand-icon {
+    height: 44px; 
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1); /* Lo mantiene blanco */
 }
 
 /* ─── FORMULARIO ─── */
@@ -442,7 +542,7 @@ body {
 .carrusel-dots .dot.activo {
     background: var(--color-rosa);
     border-color: var(--color-border);
-    box-shadow: var(--shadow-neo-sm);
+    box-shadow: none;
     transform: scale(1.2);
 }
 

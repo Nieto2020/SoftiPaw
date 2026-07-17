@@ -49,20 +49,19 @@ require_once 'includes/header.php';
 
     <!-- Sección de Quiénes Somos -->
     <div class="about-section">
-        <div class="about-row">
-            <div class="about-col-texto">
-                <h2 class="about-titulo">Somos <span class="about-destacado">expertos</span> en tecnología</h2>
-                <p class="about-descripcion">
-                    En <strong>SoftiPaw</strong> nos apasiona construir soluciones digitales que marcan la diferencia.
-                    Nuestro equipo está conformado por <strong>Web Developers-Ingenieros en Inteligencia Artificial, Datos,
-                    Software y Redes</strong>, combinando talento multidisciplinario para abordar cada proyecto
-                    con visión estratégica y excelencia técnica.
-                </p>
-                <p class="about-descripcion">
-                    Trabajamos con profesionales en <strong>Argentina, Chile, Colombia</strong> y principalmente en
-                    <strong>México</strong>, lo que nos permite entender las necesidades del mercado latinoamericano
-                    y ofrecer soluciones cercanas, ágiles y de clase mundial.
-                </p>
+    <div class="about-row">
+        <div class="about-col-texto">
+            <h2 class="about-titulo">¡Creamos <span class="about-destacado">magia digital</span> con sabor latino!</h2>
+            <p class="about-descripcion">
+                En <strong>SoftiPaw</strong> nos apasiona transformar ideas en soluciones digitales que rompen el molde. 
+                No somos la típica agencia: somos un <strong>dream team multidisciplinario</strong> de desarrolladores web 
+                y expertos en Inteligencia Artificial, Datos, Software y Redes para abordar cada reto con visión estratégica.
+            </p>
+            <p class="about-descripcion">
+                Con nuestro corazón principalmente en <strong>México</strong> y talento estratégico en 
+                <strong>Argentina, Chile y Colombia</strong>, combinamos la calidez y agilidad de nuestra región 
+                con excelencia técnica de clase mundial para ofrecerte soluciones cercanas y de alto impacto.
+            </p>
                 <div class="about-badges">
                     <div class="about-badge">
                         <span class="about-badge-icon">🤖</span>
