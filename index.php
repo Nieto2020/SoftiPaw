@@ -6,7 +6,7 @@ require_once 'includes/header.php';
 <!-- Contenido dinámico específico de la página de inicio -->
 <section class="inicio">
     <h1>Proyectos digitales a medida para tu negocio</h1>
-    <p>Diseñamos y desarrollamos soluciones web personalizadas que impulsan tus resultados.</p>
+    <p><strong>Diseñamos y desarrollamos soluciones web personalizadas que impulsan tus resultados.</strong></p>
 
     <div class="btn-group">
         <a href="contacto.php" class="btn btn-primary">Comenzar proyecto →</a>

@@ -9,15 +9,15 @@
     --color-azul-light: #C9E9FF;    /* Algodón de azúcar azul */
     
     /* Fondos e Interfaces */
-    --color-fondo: #ffffff;         /* Malvavisco/Nube esponjosa */
-    --color-fondo-alt: #FFF0F6;     /* Helado derretido */
-    --color-card: #FFFFFF;
+    --color-fondo: #ec3aa2;         /* Malvavisco/Nube esponjosa */
+    --color-fondo-alt: #ffffff;     /* Helado derretido */
+    --color-card: #e7cdcd;
 
     /* Contraste Pop (Cambiado a un regaliz de mora súper oscuro para que el pastel destaque) */
     --color-card-border: #31163D;   
     --color-texto: #31163D;
-    --color-texto-muted: #7E5B8E;   /* Crema de arándanos */
-    --color-blanco: #FFFFFF;
+    --color-texto-muted: #ffffff;   /* Crema de arándanos */
+    --color-blanco: #ffffff;
     --color-border: #31163D;
     
     /* Tipografía */
