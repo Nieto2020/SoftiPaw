@@ -6,7 +6,7 @@ require_once 'includes/header.php';
     <h1>Hablemos de tu proyecto</h1>
     <p>Cuéntanos sobre tu idea y te contactaremos en menos de 24 horas.</p>
 
-    <div class="card form-card">
+    <div class="showcase form-card">
         <form class="form">
             <div class="form-group">
                 <label class="form-label">Nombre completo</label>

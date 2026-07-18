@@ -1,6 +1,6 @@
 // Animación de entrada para las tarjetas con Intersection Observer
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.showcase');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ─── Carrusel de Quiénes Somos ───
-    const track = document.getElementById('carruselTrack');
-    const dots = document.querySelectorAll('#carruselDots .dot');
+    const track = document.getElementById('carousel');
+    const dots = document.querySelectorAll('#carouselDots .dot');
     if (track && dots.length) {
         let index = 0;
         const total = dots.length;

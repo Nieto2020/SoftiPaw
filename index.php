@@ -14,53 +14,48 @@ require_once 'includes/header.php';
     </div>
 
     <!-- Tarjetas de servicios -->
-    <div class="card-grid" id="servicios">
-        <div class="card">
-            <div class="card-icon">🎨</div>
+    <div class="grid" id="servicios">
+        <div class="showcase">
+            <div class="showcase-icon">🎨</div>
             <h3>Diseño UI/UX</h3>
             <p>Creamos interfaces intuitivas y atractivas que cautivan a tus usuarios desde el primer clic.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">⚡</div>
+        <div class="showcase">
+            <div class="showcase-icon">⚡</div>
             <h3>Desarrollo Web</h3>
             <p>Construimos aplicaciones web rápidas, seguras y escalables con tecnologías de vanguardia.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">🧑‍💻</div>
+        <div class="showcase">
+            <div class="showcase-icon">🧑‍💻</div>
             <h3>Software a Medida</h3>
             <p>Desarrollamos plataformas y sistemas personalizados adaptados a las necesidades únicas de tu empresa.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">💡</div>
+        <div class="showcase">
+            <div class="showcase-icon">💡</div>
             <h3>Consultoría Tecnológica</h3>
             <p>Te asesoramos en la estrategia digital, arquitectura tech y las mejores soluciones para tu proyecto.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">📱</div>
+        <div class="showcase">
+            <div class="showcase-icon">📱</div>
             <h3>Apps Android</h3>
             <p>Creamos aplicaciones Android nativas y multiplataforma, optimizadas para rendimiento y experiencia de usuario.</p>
         </div>
-        <div class="card">
-            <div class="card-icon">💵</div>
+        <div class="showcase">
+            <div class="showcase-icon">💵</div>
             <h3>Presupuesto personal</h3>
             <p>Nos ajustamos a tu Presupuesto empresas pequeñas, medianas, grandes y <strong>Emprendedores</strong>.</p>
         </div>
     </div>
 
     <!-- Sección de Quiénes Somos -->
-    <div class="about-section">
-    <div class="about-row">
-        <div class="about-col-texto">
-           <h2 class="about-titulo">SoftiPaw: <span class="about-destacado">Innovación digital</span> con alma latina</h2>
+    <div class="box">
+    <div class="row">
+        <div class="col">
+        <h2 class="about-titulo">SoftiPaw: <span class="about-destacado">Innovación digital</span> con alma latina</h2>
             <p class="about-descripcion">
                 En <strong>SoftiPaw</strong> transformamos tus ideas en experiencias digitales únicas. 
                 Somos un <strong>equipo creativo y técnico</strong> que combina desarrollo web, inteligencia artificial 
                 y soluciones de datos para llevar tu proyecto más allá de lo esperado.
-            </p>
-            <p class="about-descripcion">
-                Con raíces en <strong>México</strong> y aliados estratégicos en 
-                <strong>Argentina, Chile y Colombia</strong>, unimos la energía de nuestra región 
-                con excelencia global para crear soluciones cercanas, ágiles y de alto impacto.
             </p>
             <p class="about-descripcion">
                 <strong>Tu visión, nuestra misión:</strong> juntos hacemos que la tecnología trabaje para ti.
@@ -90,30 +85,30 @@ require_once 'includes/header.php';
                     <span class="about-pais">🇨🇴 Colombia</span>
                 </div>
             </div>
-            <div class="about-col-carrusel">
-                <div class="carrusel-track" id="carruselTrack">
-                    <div class="carrusel-card">
-                        <div class="carrusel-icon">🤖</div>
+            <div class="col-side">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-icon">🤖</div>
                         <h4>Inteligencia Artificial</h4>
                         <p>Modelos predictivos, NLP y automatización inteligente para tu negocio.</p>
                     </div>
-                    <div class="carrusel-card">
-                        <div class="carrusel-icon">📊</div>
+                    <div class="carousel-item">
+                        <div class="carousel-icon">📊</div>
                         <h4>Data & Analytics</h4>
                         <p>Transformamos tus datos en decisiones estratégicas con dashboards y big data.</p>
                     </div>
-                    <div class="carrusel-card">
-                        <div class="carrusel-icon">💻</div>
+                    <div class="carousel-item">
+                        <div class="carousel-icon">💻</div>
                         <h4>Ingeniería de Software</h4>
                         <p>Arquitecturas escalables, APIs robustas y código limpio para productos sólidos.</p>
                     </div>
-                    <div class="carrusel-card">
-                        <div class="carrusel-icon">🌐</div>
+                    <div class="carousel-item">
+                        <div class="carousel-icon">🌐</div>
                         <h4>Redes & Infraestructura</h4>
                         <p>Cloud, seguridad y conectividad para que tu empresa opere sin interrupciones.</p>
                     </div>
                 </div>
-                <div class="carrusel-dots" id="carruselDots">
+                <div class="carousel-dots" id="carouselDots">
                     <span class="dot activo"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -126,16 +121,16 @@ require_once 'includes/header.php';
     <!-- Sección de estadísticas / confianza -->
     <div class="stats-grid">
         <div class="stat-item">
-            <div class="stat-numero">50+</div>
+            <div class="stat-numero">20+</div>
             <div class="stat-label">Proyectos entregados</div>
         </div>
         <div class="stat-item">
-            <div class="stat-numero">30+</div>
+            <div class="stat-numero">12+</div>
             <div class="stat-label">Clientes satisfechos</div>
         </div>
         <div class="stat-item">
-            <div class="stat-numero">5★</div>
-            <div class="stat-label">Valoración media</div>
+            <div class="stat-numero">3+</div>
+            <div class="stat-label">Años de experiencia</div>
         </div>
     </div>
 </section>
