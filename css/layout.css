@@ -30,7 +30,7 @@ body {
 
 /* ─── CABECERA ─── */
 .header-principal {
-    background: var(--color-card);
+    background: var(--color-azul);
     border: 3px solid var(--color-border);
     border-top: none;
     border-radius: 0 0 var(--radius-sm) var(--radius-sm);
@@ -75,9 +75,10 @@ body {
 .logo-icon { display: none; }
 
 .logo-texto {
-    font-size: 1.3rem; font-weight: 800; letter-spacing: -0.5px;
-    color: #8B5E3C;
+    font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px;
+    color: #10192c;
 }
+/*8B5E3C*/
 
 .navegacion { display: flex; gap: 0.25rem; }
 
@@ -502,7 +503,7 @@ body {
     flex: 0 0 100%;
     padding: 2rem 1.8rem;
     text-align: center;
-    background: var(--color-amarillo-light);
+    background: var(--color-amarillo);
     border: 3px solid var(--color-border);
     border-radius: 1rem;
     box-shadow: var(--shadow-neo-sm);
@@ -514,12 +515,23 @@ body {
     gap: 0.8rem;
 }
 
+.carousel-item:not(:last-child) {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.carousel-item:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .carousel-item:nth-child(2) { background: var(--color-rosa-light); }
 .carousel-item:nth-child(3) { background: var(--color-azul-light); }
 .carousel-item:nth-child(4) { background: var(--color-amarillo-light); }
 
 .carousel-icon {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 0.2rem;
 }
 
@@ -561,13 +573,13 @@ body {
 }
 
 .about-titulo {
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.2rem);
+    font-weight: 900;
     margin-bottom: 1rem;
     color: var(--color-texto);
 }
 
-.about-destacado { color: var(--color-texto); }
+.about-destacado { color: var(--color-rosa); }
 
 .about-descripcion {
     color: #31163D;
@@ -646,31 +658,84 @@ body {
     box-shadow: var(--shadow-neo-sm);
 }
 
-/* ─── ESTADÍSTICAS ─── */
+/* ─── DESTACADO DE CONFIANZA ─── */
+.box-highlight {
+    background: var(--color-amarillo-light);
+    border-color: var(--color-border);
+    border-width: 3px;
+    box-shadow: 8px 8px 0px var(--color-border);
+    text-align: left;
+}
+
+.highlight-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.highlight-emoji {
+    font-size: 3rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 0.2rem;
+}
+
+.highlight-content {
+    flex: 1;
+}
+
+.highlight-titulo {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 800;
+    color: var(--color-texto);
+    margin-bottom: 0.6rem;
+}
+
+.highlight-texto {
+    color: var(--color-texto);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.highlight-texto strong {
+    color: var(--color-rosa);
+}
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     margin-top: 3rem;
-    padding: 2rem 0;
-    border-top: 3px dashed var(--color-border);
 }
 
 .stat-item {
     text-align: center;
+    background: var(--color-blanco);
+    border: 3px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1.5rem 1rem;
+    box-shadow: var(--shadow-neo);
+    transition: var(--transition);
+}
+
+.stat-item:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-neo-hover);
 }
 
 .stat-numero {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: var(--color-blanco);
+    color: var(--color-rosa);
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
 }
 
 .stat-label {
-    color: var(--color-blanco);
+    color: var(--color-texto);
     font-size: 0.85rem;
-    margin-top: 0.3rem;
+    font-weight: 600;
 }
 
 /* ─── BOTÓN FLOTANTE DEL FONDO INTERACTIVO ─── */

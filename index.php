@@ -11,6 +11,7 @@ require_once 'includes/header.php';
     <div class="btn-group">
         <a href="contacto.php" class="btn btn-primary">Comenzar proyecto →</a>
         <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+        <a href="repo.php" class="btn btn-outline">💾 Repositorio</a>
     </div>
 
     <!-- Tarjetas de servicios -->
@@ -51,7 +52,7 @@ require_once 'includes/header.php';
     <div class="box">
     <div class="row">
         <div class="col">
-        <h2 class="about-titulo">SoftiPaw: <span class="about-destacado">Innovación digital</span> con alma latina</h2>
+        <h2 class="about-titulo">SoftiPaw: <span class="about-destacado">¿QUIENES SOMOS?</h2></span>
             <p class="about-descripcion">
                 En <strong>SoftiPaw</strong> transformamos tus ideas en experiencias digitales únicas. 
                 Somos un <strong>equipo creativo y técnico</strong> que combina desarrollo web, inteligencia artificial 
@@ -114,6 +115,21 @@ require_once 'includes/header.php';
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Llamado de confianza -->
+    <div class="box box-highlight">
+        <div class="highlight-inner">
+            <div class="highlight-emoji">🛡️</div>
+            <div class="highlight-content">
+                <h2 class="highlight-titulo">No confíes tu emprendimiento a cualquiera</h2>
+                <p class="highlight-texto">
+                    Hoy cualquiera con una IA genera código, pero <strong>sin experiencia, sin arquitectura y sin visión</strong>
+                    tu proyecto corre riesgo. Nosotros somos <strong>profesionales</strong> con años resolviendo problemas reales.
+                    Cuidamos tu empresa como si fuera nuestra.
+                </p>
             </div>
         </div>
     </div>

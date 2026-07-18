@@ -1,7 +1,7 @@
 /* Neo-pop 3D pastel - Edición Golosa y Extra 3D */
 :root {
     /* Paleta Pastel Neo-Pop (Colores más vivos, dulces y acaramelados) */
-    --color-rosa: #FF7597;          /* Rosa chicle de fresa intenso */
+    --color-rosa: #ec3aa2;          /* Rosa chicle de fresa intenso */
     --color-rosa-light: #FFD3DD;    /* Crema de fresa suave */
     --color-amarillo: #FFDE59;      /* Caramelo de limón/plátano brillante */
     --color-amarillo-light: #FFF5C6;/* Vainilla cremosa */
@@ -9,7 +9,7 @@
     --color-azul-light: #C9E9FF;    /* Algodón de azúcar azul */
     
     /* Fondos e Interfaces */
-    --color-fondo: #ec3aa2;         /* Malvavisco/Nube esponjosa */
+    --color-fondo: #ffa9db;         /* Malvavisco/Nube esponjosa */
     --color-fondo-alt: #ffffff;     /* Helado derretido */
     --color-card: #e7cdcd;
 
