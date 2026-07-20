@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftiPaw - Estudio Digital</title>
     <meta name="description" content="SoftiPaw - Transformamos ideas en experiencias digitales impactantes. Diseño y desarrollo web moderno.">
-    <meta name="theme-color" content="#FFFAF2">
+    <meta name="theme-color" content="#FFF8F8">
     <link rel="icon" type="image/png" href="assets/img/icon_logo.png">
     <link rel="stylesheet" href="css/layout.css">
 </head>
