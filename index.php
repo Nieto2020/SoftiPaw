@@ -65,6 +65,12 @@ require_once 'includes/header.php';
         </div>
     </div>
 
+    <!-- Anuncio asesoría -->
+    <div class="announce-banner">
+        <span class="announce-icon">🧠</span>
+        <span>Te asesoramos para que sepas <strong>qué construir</strong> y cómo podemos <strong>crecer tu negocio</strong>.</span>
+    </div>
+
     <!-- Sección de Quiénes Somos -->
     <div class="box">
     <div class="row">
