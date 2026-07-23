@@ -12,7 +12,7 @@ require_once 'includes/header.php';
             <div class="btn-group hero-animate-delay-2" style="justify-content: flex-start;">
                 <a href="contacto.php" class="btn btn-primary">Comenzar proyecto →</a>
                 <a href="#servicios" class="btn btn-outline">Ver servicios</a>
-                <a href="repo.php" class="btn btn-outline">💾 Repositorio</a>
+                <a href="repositorio.php" class="btn btn-outline">💾 Repositorio</a>
             </div>
         </div>
         <div class="col-side hero-image-col hero-animate-delay-3">
